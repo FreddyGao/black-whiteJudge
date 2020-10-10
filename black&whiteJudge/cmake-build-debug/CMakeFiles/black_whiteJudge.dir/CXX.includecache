@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gaofei/CLionProjects/black&whiteJudge/main.cpp
+iostream
+-
+users.h
+/Users/gaofei/CLionProjects/black&whiteJudge/users.h
+voteBox.h
+/Users/gaofei/CLionProjects/black&whiteJudge/voteBox.h
+zconf.h
+-
+
+/Users/gaofei/CLionProjects/black&whiteJudge/users.h
+
+/Users/gaofei/CLionProjects/black&whiteJudge/voteBox.h
+
