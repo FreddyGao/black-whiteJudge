@@ -1,0 +1,23 @@
+#include "num.h"
+
+num::num(QWidget *parent) : QWidget(parent)
+{
+    this->setFixedSize(300,300);
+    edit=new QLineEdit();
+    edit->show();
+    edit->setPlaceholderText("请输入游戏人数");
+    edit->move(50,50);
+    edit->setFixedSize(100,10);
+    edit->setParent(this);
+
+    QPushButton *button;
+    button=new QPushButton("确定",this);
+    button->setGeometry(200,100,50,50);
+
+    connect(button,SIGNAL(clicked()),this,SLOT(sendSlot()));
+}
+void num:: sendSlot(){
+    int num=this->edit->text().toInt();
+    this->n=num;
+    emit Mysignal(this->n);
+}
